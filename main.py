@@ -70,7 +70,7 @@ def drawRectBox(image,rect):
 if __name__ == '__main__':
     watch_cascade = cv2.CascadeClassifier("cascade.xml")
 
-    image = cv2.imread("cyt.jpg")
+    image = cv2.imread("cy.jpg")
     images = detectPlateRough(image, image.shape[0],top_bottom_padding_rate=0.1)
     if images:
         rect = images[0][1]
